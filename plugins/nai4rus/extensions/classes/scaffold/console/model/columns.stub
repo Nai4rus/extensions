@@ -1,0 +1,14 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    is_active:
+        label: Опубликовано
+        type: switch
+    sort_order:
+        label: Сортировка
+        span: auto
+    created_at:
+        label: Создано
+        type: datetime

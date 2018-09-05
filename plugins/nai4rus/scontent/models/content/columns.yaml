@@ -1,0 +1,22 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Название
+    type_content:
+        label: Тип
+        type: partial
+    code:
+        label: Идентификатор
+    struct:
+        label: Структура
+        type: switch
+#    image:
+#        label: Изображение
+#        type: partial
+    is_active:
+        label: Опубликовано
+        type: switch
+
