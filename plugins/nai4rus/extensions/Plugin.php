@@ -2,6 +2,8 @@
 
 use Backend;
 use System\Classes\PluginBase;
+use Illuminate\Support\Facades\App;
+use Nai4rus\Extensions\Classes\Helper;
 
 /**
  * extensions Plugin Information File
