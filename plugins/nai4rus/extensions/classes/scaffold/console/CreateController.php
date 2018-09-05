@@ -38,8 +38,6 @@ class CreateController extends GeneratorCommand
         'controller/config_form.stub' => 'controllers/{{lower_name}}/config_form.yaml',
         'controller/config_list.stub' => 'controllers/{{lower_name}}/config_list.yaml',
         'controller/config_relation.stub' => 'controllers/{{lower_name}}/config_relation.yaml',
-//        'controller/config_reorder.stub' => 'controllers/{{lower_name}}/config_reorder.yaml',
-//        'controller/config_filter.stub' => 'controllers/{{lower_name}}/config_filter.yaml',
         'controller/create.stub' => 'controllers/{{lower_name}}/create.htm',
         'controller/index.stub' => 'controllers/{{lower_name}}/index.htm',
         'controller/preview.stub' => 'controllers/{{lower_name}}/preview.htm',
@@ -75,7 +73,7 @@ class CreateController extends GeneratorCommand
          * Add config_filter.yaml
          */
         $filter = $this->option('f');
-        if (!$filter) {
+        if ($filter) {
             $this->stubs['controller/config_filter.stub'] = 'controllers/{{lower_name}}/config_filter.yaml';
         }
 
@@ -83,7 +81,7 @@ class CreateController extends GeneratorCommand
          * Add config_reorder.yaml
          */
         $reorder = $this->option('r');
-        if (!$reorder) {
+        if ($reorder) {
             $this->stubs['controller/config_reorder.stub'] = 'controllers/{{lower_name}}/config_reorder.yaml';
         }
 
@@ -118,8 +116,8 @@ class CreateController extends GeneratorCommand
         return [
             ['force', null, InputOption::VALUE_NONE, 'Overwrite existing files with generated ones.'],
             ['model', null, InputOption::VALUE_OPTIONAL, 'Define which model name to use, otherwise the singular controller name is used.'],
-            ['f', null, InputOption::VALUE_OPTIONAL, 'Add config_filter.yaml'],
-            ['r', null, InputOption::VALUE_OPTIONAL, 'Add config_reorder.yaml'],
+            ['f', null, InputOption::VALUE_NONE, 'Add config_filter.yaml'],
+            ['r', null, InputOption::VALUE_NONE, 'Add config_reorder.yaml'],
         ];
     }
 }
