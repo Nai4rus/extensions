@@ -11,7 +11,7 @@ class CreateModel extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'create:model';
+    protected $name = 'create:model:ext';
 
     /**
      * The console command description.

@@ -11,7 +11,7 @@ class CreatePlugin extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'create:plugin';
+    protected $name = 'create:plugin:ext';
 
     /**
      * The console command description.
