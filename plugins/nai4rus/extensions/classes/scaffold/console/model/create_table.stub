@@ -13,8 +13,8 @@ class Create{{studly_plural_name}}Table extends Migration
             $table->increments('id');
 			$table->boolean('is_active')->default(1);
 			$table->integer('sort_order')->default(500);
-//			  $table->json('meta')->nullable();
-//			  $table->string('slug');
+//            $table->json('meta')->nullable();
+//            $table->string('slug');
 //            $table->softDeletes();
             $table->timestamps();
         });
