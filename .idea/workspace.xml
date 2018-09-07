@@ -12,13 +12,13 @@
     <session id="-1167863623">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -27,14 +27,14 @@
           <entry key="htm" value="2" />
           <entry key="md" value="1" />
           <entry key="php" value="33" />
-          <entry key="stub" value="20" />
+          <entry key="stub" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="33" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="Twig" value="2" />
         </counts>
       </usages-collector>
@@ -54,7 +54,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/ulogin/views/mail/verify.htm">
           <provider selected="true" editor-type-id="text-editor" />
@@ -63,7 +63,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
+            <state relative-caret-position="798">
               <caret line="45" column="59" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="59" />
               <folding>
                 <element signature="e#37#49#0#PHP" expanded="true" />
@@ -76,10 +76,7 @@
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/ScaffoldServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
-              <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-              <folding>
-                <element signature="e#54#94#0#PHP" expanded="true" />
-              </folding>
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -87,7 +84,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
+            <state relative-caret-position="1710">
               <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
             </state>
           </provider>
@@ -105,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreatePlugin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-666">
+            <state relative-caret-position="266">
               <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
             </state>
           </provider>
@@ -158,6 +155,7 @@
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateModel.php" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreatePlugin.php" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateController.php" />
+        <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub" />
       </list>
     </option>
   </component>
@@ -179,7 +177,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,10 +189,62 @@
               <item name="extensions" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="extensions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="nai4rus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="extensions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="nai4rus" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="extensions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="nai4rus" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="extensions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="nai4rus" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="scaffold" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="extensions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="nai4rus" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="scaffold" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="extensions" type="b2602c69:ProjectViewProjectNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="nai4rus" type="462c0819:PsiDirectoryNode" />
+              <item name="extensions" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="scaffold" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -249,17 +298,17 @@
       <workItem from="1536064751942" duration="5002000" />
       <workItem from="1536125702089" duration="4622000" />
       <workItem from="1536133865981" duration="2894000" />
+      <workItem from="1536242034120" duration="88000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19816000" />
+    <option name="totallyTimeSpent" value="19904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1080" width="1920" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="814" y="166" width="292" height="708" id="Project" order="0" sideWeight="0.4936842" visible="true" weight="0.16862327" />
+      <window_info content_ui="combo" x="814" y="166" width="292" height="708" id="Project" order="0" sideWeight="0.4936842" visible="true" weight="0.17022412" />
       <window_info x="756" y="280" width="407" height="480" id="Structure" order="1" sideWeight="0.50631577" side_tool="true" weight="0.21695095" />
       <window_info id="Favorites" order="2" sideWeight="0.50282484" side_tool="true" weight="0.19989339" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -273,7 +322,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Command Line Tools Console" order="9" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.2693566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.2693566" />
       <window_info anchor="bottom" id="File Transfer" order="12" weight="0.3273684" />
       <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" weight="0.32826087" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32934782" />
@@ -322,29 +371,13 @@
     <entry file="file://$PROJECT_DIR$/../plugins/Nai4rus/extensions/classes/scaffold/console/controller/create.stub" />
     <entry file="file://$PROJECT_DIR$/../plugins/Nai4rus/gitignore.md" />
     <entry file="file://$PROJECT_DIR$/../plugins/Nai4rus/extensions/traits/BindModel.php" />
-    <entry file="file://$PROJECT_DIR$/../plugins/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../plugins/plugins/nai4rus/ulogin/views/mail/verify.htm">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/console/model/model.stub">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/ScaffoldServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" selection-start-column="43" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../plugins/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/../plugins/plugins/nai4rus/ulogin/views/mail/verify.htm" />
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/console/model/model.stub" />
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/ScaffoldServiceProvider.php" />
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
+        <state relative-caret-position="798">
           <caret line="45" column="59" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="59" />
           <folding>
             <element signature="e#37#49#0#PHP" expanded="true" />
@@ -355,10 +388,14 @@
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/ScaffoldServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="e#54#94#0#PHP" expanded="true" />
-          </folding>
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1710">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -371,15 +408,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreatePlugin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-666">
+        <state relative-caret-position="266">
           <caret line="16" column="39" lean-forward="true" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateController.php">
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
         </state>
       </provider>
     </entry>

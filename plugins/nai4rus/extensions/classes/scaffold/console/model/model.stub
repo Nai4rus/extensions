@@ -11,6 +11,7 @@ class {{studly_name}} extends Model
 //    use \October\Rain\Database\Traits\Sortable;
 //    use \October\Rain\Database\Traits\NestedTree;
 //    use \October\Rain\Database\Traits\Validation;
+//    use \October\Rain\Database\Traits\SoftDelete;
 
 //    public $implement = ['RainLab.Translate.Behaviors.TranslatableModel'];
 
