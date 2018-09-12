@@ -12,13 +12,13 @@
     <session id="-1167863623">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -27,14 +27,14 @@
           <entry key="htm" value="2" />
           <entry key="md" value="1" />
           <entry key="php" value="33" />
-          <entry key="stub" value="21" />
+          <entry key="stub" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="33" />
-          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="PLAIN_TEXT" value="25" />
           <entry key="Twig" value="2" />
         </counts>
       </usages-collector>
@@ -42,22 +42,31 @@
         <counts>
           <entry key="gitignore" value="14" />
           <entry key="php" value="365" />
-          <entry key="stub" value="370" />
+          <entry key="stub" value="371" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PHP" value="365" />
-          <entry key="PLAIN_TEXT" value="384" />
+          <entry key="PLAIN_TEXT" value="385" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/ulogin/views/mail/verify.htm">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/model.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -156,6 +165,7 @@
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreatePlugin.php" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateController.php" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub" />
+        <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/model.stub" />
       </list>
     </option>
   </component>
@@ -299,16 +309,17 @@
       <workItem from="1536125702089" duration="4622000" />
       <workItem from="1536133865981" duration="2894000" />
       <workItem from="1536242034120" duration="88000" />
+      <workItem from="1536314491067" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19904000" />
+    <option name="totallyTimeSpent" value="19928000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1080" width="1920" height="1044" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="814" y="166" width="292" height="708" id="Project" order="0" sideWeight="0.4936842" visible="true" weight="0.17022412" />
+      <window_info content_ui="combo" x="814" y="166" width="292" height="708" id="Project" order="0" sideWeight="0.4936842" visible="true" weight="0.17182498" />
       <window_info x="756" y="280" width="407" height="480" id="Structure" order="1" sideWeight="0.50631577" side_tool="true" weight="0.21695095" />
       <window_info id="Favorites" order="2" sideWeight="0.50282484" side_tool="true" weight="0.19989339" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -375,6 +386,16 @@
     <entry file="file://$PROJECT_DIR$/../plugins/plugins/nai4rus/ulogin/views/mail/verify.htm" />
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/console/model/model.stub" />
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/ScaffoldServiceProvider.php" />
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/ulogin/views/mail/verify.htm">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -413,15 +434,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub">
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/model.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/ulogin/views/mail/verify.htm">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

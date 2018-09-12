@@ -4,6 +4,7 @@ use Backend;
 use System\Classes\PluginBase;
 use Illuminate\Support\Facades\App;
 use Nai4rus\Extensions\Classes\Helper;
+use Carbon\Carbon;
 
 /**
  * extensions Plugin Information File
@@ -43,6 +44,7 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
+        Carbon::setLocale(config('app.locale'));
         App::register('\Nai4rus\Extensions\Classes\Scaffold\ScaffoldServiceProvider');
     }
 }
