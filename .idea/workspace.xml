@@ -12,13 +12,13 @@
     <session id="-1167863623">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -27,14 +27,14 @@
           <entry key="htm" value="2" />
           <entry key="md" value="1" />
           <entry key="php" value="33" />
-          <entry key="stub" value="23" />
+          <entry key="stub" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Markdown" value="1" />
           <entry key="PHP" value="33" />
-          <entry key="PLAIN_TEXT" value="26" />
+          <entry key="PLAIN_TEXT" value="27" />
           <entry key="Twig" value="2" />
         </counts>
       </usages-collector>
@@ -69,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
@@ -77,6 +77,15 @@
               <folding>
                 <element signature="e#37#49#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -163,10 +172,10 @@
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateModel.php" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreatePlugin.php" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/CreateController.php" />
-        <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/model.stub" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/plugin/plugin.stub" />
         <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/Plugin.php" />
+        <option value="$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub" />
       </list>
     </option>
   </component>
@@ -188,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,6 +275,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,16 +332,17 @@
       <workItem from="1536242034120" duration="88000" />
       <workItem from="1536314491067" duration="24000" />
       <workItem from="1536751772375" duration="326000" />
+      <workItem from="1536843056855" duration="52000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20254000" />
+    <option name="totallyTimeSpent" value="20306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1080" width="1920" height="1044" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" x="814" y="166" width="292" height="708" id="Project" order="0" sideWeight="0.4936842" visible="true" weight="0.17342582" />
+      <window_info content_ui="combo" x="814" y="166" width="292" height="708" id="Project" order="0" sideWeight="0.4936842" visible="true" weight="0.17502668" />
       <window_info x="756" y="280" width="407" height="480" id="Structure" order="1" sideWeight="0.50631577" side_tool="true" weight="0.21695095" />
       <window_info id="Favorites" order="2" sideWeight="0.50282484" side_tool="true" weight="0.19989339" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -399,15 +409,22 @@
     <entry file="file://$PROJECT_DIR$/../plugins/plugins/nai4rus/ulogin/views/mail/verify.htm" />
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/console/model/model.stub" />
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/ScaffoldServiceProvider.php" />
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub">
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/plugin/plugin.stub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="14" column="56" lean-forward="true" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        <state relative-caret-position="342">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/ulogin/views/mail/verify.htm">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/model.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/ScaffoldServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -437,20 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/plugin/plugin.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/model.stub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -458,6 +461,13 @@
           <folding>
             <element signature="e#37#49#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/nai4rus/extensions/classes/scaffold/console/model/create_table.stub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>
