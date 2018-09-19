@@ -1,0 +1,4 @@
+1.0.1:
+  - First version of ulogin
+  - create_accounts_table.php
+  - seed_settings.php

@@ -1,0 +1,16 @@
+subject = "Подтверждение вашего аккаунта"
+description = "Проверка аккаунта при неподтвержденном email"
+==
+Здравствуйте {{ user.name }}
+
+{% if password %}
+    {% partial 'promotion' body = 'Ваш пароль: ' ~ password %}
+{% endif %}
+
+Вам необходимо подтвердить ваш почтовый адрес.
+
+Пожалуйста перейдите по ссылке ниже для активации:
+
+{% partial 'button' url=link type='positive' body %}
+Подтвердить
+{% endpartial %}

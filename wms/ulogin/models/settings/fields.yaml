@@ -1,0 +1,52 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+#    use_cdn:
+#        label: Загружать js с CDN
+#        type: checkbox
+#        default: 1
+#    last_modificated:
+#        label: Дата обновления js
+#        readOnly: true
+#        span: left
+#        trigger:
+#            action: show
+#            field: use_cdn
+#            condition: unchecked
+    verify:
+        label: Проверять почту сервисом ulogin
+        type: checkbox
+        default: 1
+    display:
+        label: Размер
+        type: dropdown
+        options:
+            small: Малый
+            panel: Большой
+    theme:
+        label: Стиль кнопок
+        type: dropdown
+        options:
+            classic: Объемные
+            flat: Плоские
+    providers_first:
+        label: Социальные сети выводимые сразу
+        type: repeater
+        span: left
+        form:
+            fields:
+                site:
+                    label: Социальная сеть
+                    type: dropdown
+    providers_second:
+        label: Социальные сети выводимые при наведении
+        type: repeater
+        span: right
+        form:
+            fields:
+                site:
+                    label: Социальная сеть
+                    type: dropdown
+

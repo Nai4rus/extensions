@@ -1,0 +1,17 @@
+{% set settings = __SELF__.settings %}
+<div id="{{ __SELF__ }}" data-ulogin="
+display={{ settings.display?:'panel' }};
+verify={{ settings.verify?:1 }};
+theme={{settings.theme?:'flat'}};
+optional=photo_big;
+fields=first_name,last_name,email;
+{% if settings.providers_first|length != 0 %}
+providers={{ settings.providers_first|join(',') }};
+{% endif %}
+{% if settings.providers_second|length != 0  %}
+hidden={{ settings.providers_second|join(',') }};
+{% endif %}
+redirect_uri;
+mobilebuttons=0;
+callback=socalAuth;
+"></div>

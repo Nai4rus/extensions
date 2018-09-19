@@ -1,0 +1,19 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    is_active:
+        label: Опубликовать
+        type: checkbox
+        default: 1
+    sort_order:
+        label: Сортировка
+        type: number
+        default: 500
+        span: auto
+
+    created_at@update:
+        label: Дата создания
+        type: datepicker
+        span: auto
