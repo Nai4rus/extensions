@@ -11,13 +11,13 @@ class CreateAccountsTable extends Migration
         Schema::create('wms_ulogin_accounts', function(Blueprint $table) {
             $table->engine = 'InnoDB';
             $table->increments('id');
-            $table->string('identity',400)->nullable();
-            $table->string('uid',400)->nullable();
-            $table->string('profile',400)->nullable();
-            $table->string('network')->nullable();
+            $table->string('identity',400);
+            $table->string('uid',400);
+            $table->string('profile',400);
+            $table->string('network');
             $table->boolean('is_active')->default(1);
-            $table->string('user_id')->nullable();
-            $table->timestamp('deleted_at')->nullable();
+            $table->unsignedInteger('user_id');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

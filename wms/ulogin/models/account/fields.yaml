@@ -3,6 +3,20 @@
 # ===================================
 
 fields:
-    id:
-        label: ID
-        disabled: true
+    is_active:
+        label: Активно
+        type: checkbox
+        default: 1
+    identity:
+        label: Уникальный идентификатор пользователя
+        span: auto
+    uid:
+        label: Уникальный идентификатор пользователя в соцсети
+        span: auto
+    profile:
+        label: Адрес профиля пользователя
+        span: auto
+    network:
+        label: Идентификатор соцсети пользователя
+        span: auto
+

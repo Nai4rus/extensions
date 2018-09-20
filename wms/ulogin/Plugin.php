@@ -48,8 +48,8 @@ class Plugin extends PluginBase
         return [
             'settings' => [
                 'label'       => 'Настройки Ulogin',
-                'description' => '',
-                'icon'        => 'icon-globe',
+                'description' => 'Авторизация через социальные сети',
+                'icon'        => 'icon-id-badge',
                 'class'       => 'Wms\Ulogin\Models\Settings',
                 'order'       => 500,
             ]
@@ -64,7 +64,6 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Wms\Ulogin\Components\Account' => 'SocialAccount',
             'Wms\Ulogin\Components\Ulogin' => 'Ulogin',
         ];
     }
@@ -84,12 +83,10 @@ class Plugin extends PluginBase
      */
     public function registerPermissions()
     {
-        return []; // Remove this line to activate
-
         return [
-            'wms.ulogin.some_permission' => [
-                'tab' => 'ulogin',
-                'label' => 'Some permission'
+            'wms.ulogin.settings' => [
+                'tab' => 'Авторизация через Ulogin',
+                'label' => 'Доступ к настройкам Ulogin'
             ],
         ];
     }
