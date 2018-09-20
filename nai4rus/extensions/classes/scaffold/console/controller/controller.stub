@@ -20,6 +20,10 @@ class {{studly_name}} extends Controller
 //    public $relationConfig = 'config_relation.yaml';
 //    public $reorderConfig = 'config_reorder.yaml';
 
+    public $requiredPermissions = [
+//        '{{lower_plugin}}.{{lower_name}}.*'
+    ];
+
     public function __construct()
     {
         parent::__construct();
