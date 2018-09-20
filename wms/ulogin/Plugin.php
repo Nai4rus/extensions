@@ -1,6 +1,7 @@
 <?php namespace Wms\Ulogin;
 
 use Backend;
+use RainLab\User\Models\User;
 use System\Classes\PluginBase;
 
 /**
@@ -40,7 +41,9 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-
+        User::extend(function ($model) {
+            $model->hasMany['social_accounts'] = 'Wms\Ulogin\Models\Account';
+        });
     }
 
     public function registerSettings()
