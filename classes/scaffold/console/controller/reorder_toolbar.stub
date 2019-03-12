@@ -1,0 +1,5 @@
+<div data-control="toolbar">
+    <a href="<?= Backend::url('{{lower_author}}/{{lower_plugin}}/{{lower_name}}/') ?>" class="btn btn-default oc-icon-chevron-left">
+        <?= trans('backend::form.return_to_list') ?>
+    </a>
+</div>

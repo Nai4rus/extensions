@@ -1,0 +1,12 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+
+    is_active:
+        label: cms::theme.active_button
+        type: switch
+    created_at:
+        label: backend::user.created_at
+        type: datetime
