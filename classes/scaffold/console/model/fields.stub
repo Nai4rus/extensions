@@ -4,11 +4,11 @@
 
 fields:
     is_active:
-        label: cms::theme.activate_button
+        label: cms::lang.theme.activate_button
         type: checkbox
         default: 1
 
     created_at@update:
-        label: backend::user.created_at
+        label: backend::lang.user.created_at
         type: datepicker
         span: auto

@@ -3,7 +3,7 @@
 # ===================================
 
 # Reorder Title
-title: backend::reorder.default_title
+title: backend::lang.reorder.default_title
 
 # Attribute name
 nameFrom: name

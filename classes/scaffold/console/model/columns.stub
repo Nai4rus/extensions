@@ -5,8 +5,8 @@
 columns:
 
     is_active:
-        label: cms::theme.active_button
+        label: cms::lang.theme.active_button
         type: switch
     created_at:
-        label: backend::user.created_at
+        label: backend::lang.user.created_at
         type: datetime
