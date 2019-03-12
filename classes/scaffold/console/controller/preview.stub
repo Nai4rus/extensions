@@ -15,7 +15,7 @@
 
     <p class="flash-message static error"><?= e($this->fatalError) ?></p>
     <p><a href="<?= Backend::url('{{lower_author}}/{{lower_plugin}}/{{lower_name}}') ?>" class="btn btn-default">
-        <?= trans('backend::form.return_to_list') ?>
+        <?= trans('backend::lang.form.return_to_list') ?>
     </a></p>
 
 <?php endif ?>
