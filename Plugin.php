@@ -1,14 +1,15 @@
 <?php namespace Nai4rus\Extensions;
 
 use Backend;
+use Illuminate\Support\Facades\Event;
 use Nai4rus\Extensions\Classes\ListsTypes\Selector;
 use Nai4rus\Extensions\Classes\ListsTypes\StrWords;
 use Nai4rus\Extensions\Classes\ListColumnType;
-use October\Rain\Support\Facades\Str;
-use System\Classes\PluginBase;
+use Nai4rus\Extensions\Classes\ListsTypes\Switcher;
+use Nai4rus\Extensions\Classes\Scaffold\ScaffoldServiceProvider;
 use Illuminate\Support\Facades\App;
 use Nai4rus\Extensions\Classes\Helper;
-use Carbon\Carbon;
+use System\Classes\PluginBase;
 
 /**
  * extensions Plugin Information File
@@ -30,7 +31,8 @@ class Plugin extends PluginBase
         ];
     }
 
-    public function registerListColumnTypes()
+
+    public function registerListColumnTypes(): array
     {
         return [
             'selector' => function ($value, $col, $model) {
@@ -40,11 +42,16 @@ class Plugin extends PluginBase
             'strwords' => function ($value, $col) {
                 $listType = new StrWords(new ListColumnType($value, $col));
                 return $listType->strWords();
+            },
+            'slider' => function ($value, $col, $model) {
+                $listType = new Switcher(new ListColumnType($value, $col, $model));
+                return $listType->render();
             }
         ];
     }
 
-    public function registerMarkupTags()
+
+    public function registerMarkupTags(): array
     {
         return [
             'functions' => [
@@ -55,6 +62,7 @@ class Plugin extends PluginBase
         ];
     }
 
+
     /**
      * Boot method, called right before the request route.
      *
@@ -62,7 +70,8 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-        Carbon::setLocale(config('app.locale'));
-        App::register('\Nai4rus\Extensions\Classes\Scaffold\ScaffoldServiceProvider');
+        App::register(ScaffoldServiceProvider::class);
+
+        Switcher::implement();
     }
 }

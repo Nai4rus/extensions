@@ -65,7 +65,7 @@ class Selector
 
     private function returnSelectedOption()
     {
-        $selectedValue = $this->listType->getSelectedValue();
+        $selectedValue = $this->listType->getValue();
 
         if (isset($this->options[$selectedValue])) {
             return $this->options[$selectedValue];

@@ -4,9 +4,15 @@
 namespace Nai4rus\Extensions\Classes\ListsTypes;
 
 
+use Backend\Classes\ListColumn;
+
 interface ListTypeInterface
 {
-    public function getSelectedValue();
-    public function getListColumn();
-    public function getModel();
+    public function getValue();
+
+
+    public function getListColumn(): ListColumn;
+
+
+    public function getModel(): \Model;
 }

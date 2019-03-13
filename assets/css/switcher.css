@@ -1,0 +1,18 @@
+.custom-switch.switcher-slider >span{
+    font-size: 11px;
+}
+.custom-switch.switcher-slider >span span{
+    top: -1px;
+}
+.custom-switch.switcher-slider{
+    width: 60px;
+    height: 20px;
+}
+.custom-switch .slide-button{
+    top: 3px;
+    width: 14px;
+    height: 14px;
+}
+.custom-switch >span span:first-of-type{
+    padding-left: 12px;
+}

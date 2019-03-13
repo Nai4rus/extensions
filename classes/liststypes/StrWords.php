@@ -19,7 +19,7 @@ class StrWords
     public function strWords()
     {
         $column = $this->listType->getListColumn();
-        $selectedValue = $this->listType->getSelectedValue();
+        $selectedValue = $this->listType->getValue();
 
         $this->changeStrLimitByConfig($column->config);
 
