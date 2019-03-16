@@ -3,111 +3,66 @@
 namespace Nai4rus\Extensions\Classes\Pagination;
 
 
-use Illuminate\Contracts\Pagination\LengthAwarePaginator;
-use Illuminate\Support\Facades\Request;
+use Nai4rus\Extensions\Classes\PaginationFactory;
 
-class Paginator
+class Paginator implements \IteratorAggregate
 {
-    private const BLACKLIST_PARAMS = [
-        'content_info',
-        'control_info',
-    ];
-
-    private $content_info;
-    private $control_info;
-    private $handler;
-    private $remote_form_selector;
-    private $paginator_collection;
+    public $pagination_container;
+    public $pagination_partial;
+    public $items;
+    public $items_container;
+    public $items_partial;
 
 
-    public function __construct(LengthAwarePaginator $paginator_collection, ContentPaginationInfo $content, ControlPaginationInfo $control)
+    public function __construct(PaginationFactory $factory)
     {
-        $this->paginator_collection = $paginator_collection;
-        $this->content_info = $content;
-        $this->control_info = $control;
+        $control = $factory->getControlInfo()->addVars($factory->toArray());
+        $content = $factory->getContentInfo()->addVars($factory->toArray());
+
+        $this->pagination_container = $control->getContainerSelector();
+        $this->pagination_partial = $control->renderPartial();
+        $this->items_container = $content->getContainerSelector();
+        $this->items_partial = $content->renderPartial();
+        $this->items = $factory->getItemsCollection();
     }
 
 
-    public function generate(string $handler_method): array
+    public function getPaginationContainer(): string
     {
-        $this->handler = $handler_method;
-
-        if (Request::ajax()) {
-            return $this->generateAjaxPagination();
-        }
-
-        return $this->generatePagination();
+        return $this->pagination_container;
     }
 
 
-    public function getRemoteFormSelector()
+    public function getItemsContainer(): string
     {
-        return $this->remote_form_selector;
+        return $this->items_container;
     }
 
 
-    public function setRemoteFormSelector($remote_form_selector): self
+    public function renderList(): string
     {
-        $this->remote_form_selector = $remote_form_selector;
-        return $this;
+        return $this->items_partial;
     }
 
 
-    public function getPaginatorCollection(): LengthAwarePaginator
+    public function renderPagination(): string
     {
-        return $this->paginator_collection;
+        return $this->pagination_partial;
     }
 
 
-    public function getContentInfo(): ContentPaginationInfo
+    public function toAjax(): array
     {
-        return $this->content_info;
-    }
-
-
-    public function getControlInfo(): ControlPaginationInfo
-    {
-        return $this->control_info;
-    }
-
-
-    public function toArray(): array
-    {
-        $vars = get_object_vars($this);
-
-        return array_filter($vars, function ($k) {
-            return !in_array($k, self::BLACKLIST_PARAMS, true);
-        }, ARRAY_FILTER_USE_KEY);
-    }
-
-
-    private function generatePagination(): array
-    {
-        $data = [
-            'pagination_container' => $this->control_info->getContainerSelector(),
-            'pagination_partial' => $this->control_info->addVars($this->toArray())->renderPartial(),
-            'items_container' => $this->content_info->getContainerSelector(),
-            'items' => $this->paginator_collection,
-            'items_partial' => $this->content_info->addVars($this->toArray())->renderPartial(),
+        return [
+            'items' => $this->items,
+            $this->pagination_container => $this->pagination_partial,
+            $this->items_container = $this->items_partial
         ];
-
-        return $data;
     }
 
 
-    private function generateAjaxPagination(): array
+    public function getIterator(): \ArrayIterator
     {
-        $items_container = $this->content_info->getContainerSelector();
-        $pagination_container = $this->control_info->getContainerSelector();
-
-        $data = [
-            $pagination_container => $this->control_info->addVars($this->toArray())->renderPartial(),
-            'items' => $this->paginator_collection,
-            $items_container => $this->content_info->addVars($this->toArray())->renderPartial()
-        ];
-
-        return $data;
+        return new \ArrayIterator($this->items);
     }
-
-
 }
