@@ -5,6 +5,7 @@ namespace Nai4rus\Extensions\Classes\Pagination;
 
 
 use Cms\Classes\Controller;
+use Illuminate\Support\Facades\Input;
 
 class ContentPaginationInfo
 {
@@ -17,7 +18,7 @@ class ContentPaginationInfo
     public function __construct(string $partial_alias, string $container_selector = null, array $vars = [])
     {
         $this->partial_alias = $partial_alias;
-        $this->container_selector = $container_selector ?: post($this->container_selector_key) ?: '@#contentBox';
+        $this->container_selector = $container_selector ?: Input::get($this->container_selector_key) ?: '@#contentBox';
         $this->vars = $vars;
     }
 
