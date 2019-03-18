@@ -1,0 +1,26 @@
+<table class="allPageList" border="1"  >
+    <tr>
+        <td>Страница | Page</td>
+        <td>Ссылка | URL</td>
+        <td>Название | Title(meta)</td>
+        <td>Путь к файлу | File path</td>
+    </tr>
+    {% for code,page in __SELF__.pageList %}
+        {% set url = page.url|replace({'/default': '/{PARAMETER}'}) %}
+        <tr >
+            <td>{{ code }}</td>
+            <td><a href="{{ url }}">{{ url }}</a></td>
+            <td>{{ page.name }}</td>
+            <td>{{ page.path }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+<style>
+    .allPageList td{
+        padding: 8px 15px;
+    }
+    .allPageList{
+        border-collapse: collapse
+    }
+</style>

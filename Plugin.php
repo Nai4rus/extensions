@@ -9,6 +9,7 @@ use Nai4rus\Extensions\Classes\ListsTypes\Switcher;
 use Nai4rus\Extensions\Classes\Scaffold\ScaffoldServiceProvider;
 use Illuminate\Support\Facades\App;
 use Nai4rus\Extensions\Classes\Helper;
+use Nai4rus\Extensions\Components\Pages;
 use System\Classes\PluginBase;
 
 /**
@@ -73,5 +74,17 @@ class Plugin extends PluginBase
         App::register(ScaffoldServiceProvider::class);
 
         Switcher::implement();
+    }
+
+    /**
+     * Registers any front-end components implemented in this plugin.
+     *
+     * @return array
+     */
+    public function registerComponents(): array
+    {
+        return [
+            Pages::class => 'Pages',
+        ];
     }
 }
