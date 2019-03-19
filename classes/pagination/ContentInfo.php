@@ -7,7 +7,7 @@ namespace Nai4rus\Extensions\Classes\Pagination;
 use Cms\Classes\Controller;
 use Illuminate\Support\Facades\Input;
 
-class ContentPaginationInfo
+class ContentInfo
 {
     private $partial_alias;
     private $container_selector;
