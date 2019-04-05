@@ -12,15 +12,17 @@ class Selector
     private $methodPrefix = 'get';
     private $methodPostfix = 'Options';
 
+
     public function __construct(ListTypeInterface $listType)
     {
         $this->listType = $listType;
         $this->listColumn = $this->listType->getListColumn();
     }
 
+
     public function selector()
     {
-        if (isset($this->listColumn->config['method'])) {
+        if (!isset($this->listColumn->config['options'])) {
             return $this->returnSelectedByMethod();
         }
 
@@ -48,7 +50,7 @@ class Selector
     }
 
 
-    private function makeOptionsMethod($name)
+    private function makeOptionsMethod($name): string
     {
         $name = ucfirst(camel_case($name));
         return $this->methodPrefix . $name . $this->methodPostfix;
@@ -63,14 +65,11 @@ class Selector
         }
     }
 
+
     private function returnSelectedOption()
     {
         $selectedValue = $this->listType->getValue();
 
-        if (isset($this->options[$selectedValue])) {
-            return $this->options[$selectedValue];
-        }
-
-        return $selectedValue;
+        return $this->options[$selectedValue] ?? $selectedValue;
     }
 }
